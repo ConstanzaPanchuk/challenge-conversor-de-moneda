@@ -23,5 +23,6 @@ Como mejora adicional, el proyecto puede ampliarse incorporando historial de con
 - Opción para salir del programa de forma segura.
 
 :camera:**Capturas de pantalla**
+
 <img width="592" height="462" alt="CapturaDePantallaConversor" src="https://github.com/user-attachments/assets/90415ef6-be9b-474b-80cf-ab6fa0cfa993" />
 

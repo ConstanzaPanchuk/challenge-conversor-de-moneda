@@ -4,6 +4,8 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+//Clase no usada de momento
+
 public class ConsultarCambio {
 
     Moneda consultarCambio(String monedaBase, String monedaTarget){

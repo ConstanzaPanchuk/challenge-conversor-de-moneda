@@ -7,7 +7,7 @@ import java.net.http.HttpResponse;
 
 public class FiltrarMoneda {
 
-    public void filtrarMoneda(String monedaBase) {
+    public JsonObject filtrarMoneda(String monedaBase) {
         URI direccion = URI.create(
                 "https://v6.exchangerate-api.com/v6/86a83205f8687efed7846183/latest/" + monedaBase);
 
@@ -25,14 +25,17 @@ public class FiltrarMoneda {
                         .getAsJsonObject();
                 JsonObject conversionRates = json.getAsJsonObject("conversion_rates");
 
-                String[] monedasFiltradas = {
+                String[] monedasPrincipales = {
                         "ARS", "BOB", "BRL", "CLP", "COP", "USD"
                 };
+                JsonObject monedasFiltradas = new JsonObject();
 
-                for (String codigo : monedasFiltradas) {
-                    double valor = conversionRates.get(codigo).getAsDouble();
-                    System.out.println(codigo + " : " + valor);
+                for (String codigo : monedasPrincipales) {
+                    monedasFiltradas.addProperty(codigo,
+                            conversionRates.get(codigo).getAsDouble());
                 }
+
+                return monedasFiltradas;
 
             } catch (Exception e) {
                 throw new RuntimeException("Error al filtrar monedas");

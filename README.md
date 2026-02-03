@@ -26,3 +26,6 @@ Como mejora adicional, el proyecto puede ampliarse incorporando historial de con
 
 <img width="592" height="462" alt="CapturaDePantallaConversor" src="https://github.com/user-attachments/assets/90415ef6-be9b-474b-80cf-ab6fa0cfa993" />
 
+<img width="621" height="475" alt="CapturadepantallaConversor2" src="https://github.com/user-attachments/assets/d8aac513-cb93-4ca3-8394-a790fefe7f7d" />
+
+
